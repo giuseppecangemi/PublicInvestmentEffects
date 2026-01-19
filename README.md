@@ -8,3 +8,14 @@
 ![Public debt](graphs/BASELINE/public_debt.png)
 
 ![Unemployment](graphs/BASELINE/unemployment.png)
+
+### Modello "Paesi Periferici"
+#### Paesi in analisi: Italy, Spain, Portugal, Greece, Cyprus, Malta
+
+![GDP](graphs/PAESI PERIFERICI/gdp.png)
+
+![Private investment](graphs/PAESI PERIFERICI/private_investment.png)
+
+![Public debt](graphs/PAESI PERIFERICI/public_debt.png)
+
+![Unemployment](graphs/PAESI PERIFERICI/unemployment.png)
