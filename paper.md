@@ -11,42 +11,33 @@ date: "2026-XX-XX"
 
 ### 1. Motivation
 
-In recent years, public investment has returned to the centre of the European policy debate.  
-The need to close infrastructure gaps, support the green transition, and strengthen long-run growth has led to renewed interest in the **macroeconomic effects of public investment**.
+In recent years, public investment has returned to the centre of the European policy debate. The need to close infrastructure gaps, support the green transition, and strengthen long-run growth has renewed interest in the macroeconomic effects of public investment, both among policymakers and in the academic literature.
 
-A recent contribution by Heimberger and Dabrowski (2025) provides compelling evidence that **public investment shocks boost output, reduce unemployment, and do not endanger public debt sustainability** in the European Union.  
-Their results are based on a transparent identification strategy and modern local projection techniques.
+A recent contribution by Heimberger and Dabrowski (2025) provides compelling evidence that public investment shocks boost output, reduce unemployment, and do not endanger public debt sustainability in the European Union. Their results are based on a transparent identification strategy and a modern local projection framework, and they contribute to a growing consensus that public investment may play a central role in stabilisation and growth policies.
 
-However, an important question remains largely unexplored:
+At the same time, an important question remains largely unexplored. While average effects are informative, they may conceal substantial heterogeneity across countries. In particular, it is not obvious that public investment should be equally effective in all institutional environments.
 
-> **Does public investment work equally well in all institutional environments?**
-
-In particular, this article asks whether the impact of public investment differs between countries with **low and high levels of corruption**.
+This article therefore asks whether the macroeconomic impact of public investment differs systematically between countries with low and high levels of corruption.
 
 
 ### 2. The Original Paper: Idea and Identification Strategy
 
 #### 2.1 Public Investment Shocks via Forecast Errors
 
-The core idea of Heimberger and Dabrowski (2025) is to identify public investment shocks using **forecast errors**:
+The key idea in Heimberger and Dabrowski (2025) is to identify public investment shocks using forecast errors, defined as the difference between realised public investment and the corresponding ex-ante forecast.
 
 ```math
 F_{i,t} = I^{\text{actual}}_{i,t} - I^{\text{forecast}}_{i,t}
 ```
 
-where public investment is measured as general government gross fixed capital formation as a share of GDP.
+Public investment is measured as general government gross fixed capital formation as a share of GDP. This identification strategy addresses two well-known challenges in the empirical analysis of fiscal policy. First, it mitigates the fiscal foresight problem, as economic agents may adjust their behaviour in anticipation of announced investment plans. Second, it alleviates concerns about endogeneity, since forecast errors are plausibly orthogonal to contemporaneous macroeconomic shocks.
 
-This strategy addresses two classic problems in fiscal policy estimation:
-
-- **Fiscal foresight**: economic agents may anticipate investment plans.
-- **Endogeneity**: fiscal policy may respond to the business cycle.
-
-By exploiting forecast errors from European Commission archives, the authors align the econometric information set with that of households and firms.
+By exploiting archive data from European Commission forecasts, the authors align the econometric information set with that of households and firms, strengthening the causal interpretation of the estimated impulse responses.
 
 
 #### 2.2 Econometric Framework
 
-The paper estimates impulse responses using **local projections** (Jordà, 2005), based on the following baseline equation:
+The dynamic effects of public investment shocks are estimated using local projections following Jordà (2005). At each horizon \(k\), the baseline specification takes the form:
 
 ```math
 y_{i,t+k} - y_{i,t-1}
@@ -58,95 +49,69 @@ y_{i,t+k} - y_{i,t-1}
 + \varepsilon_{i,t}^k
 ```
 
-where:
+The dependent variable captures the cumulative response of the outcome of interest, which includes real GDP, unemployment, private investment, and the public-debt-to-GDP ratio. The vector of controls accounts for standard macroeconomic dynamics, while country and time fixed effects absorb unobserved heterogeneity. Inference is conducted using Driscoll–Kraay standard errors to account for serial and cross-sectional dependence.
 
-- \(y\) denotes the outcome variable (GDP, unemployment, private investment, public debt),
-- \(F_{i,t}\) is the public investment forecast error,
-- \(Z\) includes standard macroeconomic controls,
-- \(\delta_i^k\) and \(\theta_t^k\) are country and time fixed effects.
-
-The authors find **cumulative output multipliers above one**, with no evidence of crowding-out or rising debt.
+The original paper finds cumulative output multipliers above one, no evidence of crowding-out of private investment, and no deterioration in public debt dynamics.
 
 
 ### 3. Replication: Why It Matters
 
-Before extending the analysis, I fully **replicate the original results** using the authors’ specification and data structure.
+Before extending the analysis, I replicate the original results using the same empirical framework. Replication serves a dual purpose. First, it provides a validation of the original findings. Second, it establishes a clean benchmark against which the extended specification can be evaluated.
 
-The replication serves three purposes:
-
-1. **Verification** – confirming that the results are reproducible.  
-2. **Benchmarking** – ensuring comparability with the extension.  
-3. **Transparency** – allowing readers to visually compare baseline and extended impulse responses.
-
-The replicated impulse-response functions closely match those reported in the original paper, both in magnitude and in statistical uncertainty.
+The replicated impulse-response functions closely match those reported in the original study, both in terms of magnitude and dynamic patterns, lending confidence to the subsequent analysis.
 
 
 ### 4. Baseline Results: Interpretation and Economic Context
 
-Before turning to the role of corruption, it is useful to discuss the baseline results obtained from the replication. These results provide the empirical benchmark against which the extended specification with institutional heterogeneity is evaluated.
+This section briefly discusses the baseline results obtained from the replication, which form the empirical reference point for the analysis of institutional heterogeneity.
 
 
 #### 4.1 Real GDP: Cumulative Investment Multiplier
 
 ![Real GDP: cumulative investment multiplier](gdp.png)
 
-The first panel reports the cumulative response of real GDP to a one percentage point of GDP public investment shock.
+The response of real GDP to a public investment shock exhibits a clear and economically meaningful pattern. On impact, the output multiplier is approximately 0.6, indicating that public investment generates a sizable increase in economic activity, though not a one-to-one effect in the very short run. Over time, the multiplier rises steadily, exceeding unity after one year and stabilising around 1.2 to 1.3 after two to three years.
 
-On impact, the estimated output multiplier is approximately 0.6, indicating that public investment generates a sizable but initially incomplete increase in aggregate output. Over time, the multiplier rises steadily, exceeding unity after one year and stabilizing around 1.2–1.3 after two to three years.
-
-This dynamic pattern is consistent with the presence of both short-run demand effects and medium-run supply-side effects, such as improved infrastructure and higher productive capacity. The magnitude and persistence of the multiplier are fully in line with the empirical literature on public investment multipliers.
+This gradual build-up is consistent with the idea that public investment operates through both demand-side channels in the short run and supply-side channels in the medium run, as improved infrastructure and public capital enhance productive capacity. The magnitude and persistence of the estimated multipliers are fully in line with the existing empirical literature on public investment.
 
 
-#### 4.2 Private Investment: Absence of Crowding-Out
+#### 4.2 Private Investment: Complementarity Rather Than Crowding-Out
 
 ![Private investment ratio](private_investment.png)
 
-The response of private investment is positive on impact and peaks after one year, before gradually declining while remaining positive over the entire horizon.
+Private investment responds positively to public investment shocks. The response peaks after one year and remains positive over the entire horizon, although uncertainty increases at longer horizons.
 
-These results provide no evidence of crowding-out effects. Instead, they suggest a crowding-in mechanism, whereby public investment stimulates complementary private investment, possibly through improved infrastructure, higher expected demand, or lower adjustment costs for firms.
+These dynamics suggest that public investment does not crowd out private capital formation. On the contrary, they are consistent with a crowding-in mechanism, whereby public investment raises the expected profitability of private projects, improves infrastructure, or reduces adjustment costs faced by firms.
 
 
-#### 4.3 Public Debt: No Deterioration in Debt Sustainability
+#### 4.3 Public Debt: Debt Dynamics Remain Benign
 
 ![Public debt ratio](public_debt.png)
 
-The response of the public-debt-to-GDP ratio is mildly negative in the first two years following the shock and returns close to zero thereafter. Although uncertainty bands are wide, there is no indication of a systematic increase in public debt.
+The response of the public-debt-to-GDP ratio is mildly negative in the first two years following the shock and returns close to zero thereafter. While the confidence bands are wide, there is no indication of a systematic increase in public debt.
 
-This suggests that the output gains generated by public investment are sufficiently strong to offset the initial fiscal cost, mitigating concerns about debt sustainability.
+This pattern suggests that the growth effects of public investment are sufficiently strong to offset its fiscal cost, at least over the medium run. In this sense, public investment appears broadly consistent with debt sustainability.
 
 
-#### 4.4 Unemployment: Short-Run Labor Market Effects
+#### 4.4 Unemployment: Short-Run Labour Market Effects
 
 ![Unemployment rate](unemployment.png)
 
-Unemployment declines on impact and reaches its maximum reduction after one to two years, before gradually returning towards zero.
+Unemployment declines following the public investment shock, reaching its maximum reduction after one to two years before gradually returning towards its pre-shock level. This response mirrors the dynamics of output and reflects higher labour demand as economic activity expands.
 
-This pattern mirrors the dynamics of output and reflects increased labor demand as economic activity expands following the investment shock.
+Although uncertainty increases at longer horizons, the short-run decline in unemployment is economically meaningful and reinforces the stabilising role of public investment.
 
 
 #### 4.5 Summary of Baseline Findings
 
-Taken together, the baseline results indicate that:
-
-- public investment multipliers exceed one in the medium run,
-- private investment is crowded in rather than crowded out,
-- public debt does not deteriorate,
-- unemployment declines in the short to medium run.
-
-These findings provide a solid benchmark and motivate the analysis of heterogeneity across institutional environments.
+Taken together, the baseline results depict a coherent macroeconomic adjustment. Public investment raises output by more than one-for-one in the medium run, stimulates private investment, reduces unemployment, and does not lead to an increase in public debt. These findings confirm the effectiveness of public investment on average and provide a solid benchmark for the analysis of heterogeneity across institutional environments.
 
 
 ### 5. Research Question: Does Corruption Matter?
 
-While average effects are informative, fiscal multipliers may vary across countries.
+While the average effects of public investment are clearly positive, they may conceal substantial variation across countries. A natural candidate driving such heterogeneity is institutional quality, and in particular corruption.
 
-A natural candidate driving heterogeneity is **institutional quality**, and in particular **corruption**.
-
-From an economic perspective, higher corruption may reduce investment efficiency, increase leakages and rent-seeking, and weaken the transmission from public spending to real activity.
-
-This leads to the central question of this article:
-
-> **Is the macroeconomic impact of public investment lower in more corrupt countries?**
+Higher corruption may reduce the efficiency of public investment, increase leakages and rent-seeking, and weaken the transmission from public spending to real economic activity. This consideration motivates the central question of the article: whether the macroeconomic impact of public investment is systematically lower in more corrupt countries.
 
 
 ### 6. Methodological Extension: Introducing Corruption Interactions
@@ -166,21 +131,17 @@ y_{i,t+k} - y_{i,t-1}
 + \varepsilon_{i,t}^k
 ```
 
-where \(\text{Corr}_{i,t-1}\) is a lagged corruption indicator. Corruption is mean-centered so that \(\beta_k\) captures the effect at average corruption levels.
+The corruption indicator is lagged and mean-centered, so that \(\beta_k\) captures the effect of public investment at average corruption levels, while \(\theta_k\) measures how this effect varies with institutional quality.
 
 
 #### 6.2 Interpretation
 
-The coefficient \(\beta_k\) measures the effect of a public investment shock at average corruption levels, while \(\theta_k\) captures how this effect varies with institutional quality.
-
-Conditional impulse responses can therefore be computed for low- and high-corruption countries.
+This specification allows the investment multiplier to vary continuously with corruption. Conditional impulse responses can therefore be computed for countries with different levels of institutional quality, making it possible to assess whether corruption systematically attenuates the effectiveness of public investment.
 
 
 ### 7. Conclusion
 
-This article shows that while public investment is highly effective on average, its macroeconomic impact may depend crucially on institutional quality.
-
-Understanding this heterogeneity is essential for the design of effective public investment strategies and for maximizing the growth and employment benefits of fiscal policy.
+This article shows that public investment is highly effective on average, but its macroeconomic impact may depend crucially on institutional quality. Understanding this heterogeneity is essential for the design of public investment strategies that maximise growth and employment gains, particularly in the context of large-scale investment programmes in the European Union.
 
 
 ### References
