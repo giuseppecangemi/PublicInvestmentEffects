@@ -1,17 +1,15 @@
----
+
 title: "Public Investment Multipliers and Corruption: Does Institutional Quality Matter?"
 subtitle: "Replication and Extension of Heimberger & Dabrowski (2025)"
 author: "Nome Cognome"
 date: "2026-XX-XX"
----
+
 
 > *This article combines replication and methodological extension.  
 > First, I replicate recent evidence on public investment multipliers in the EU.  
 > Second, I ask whether the effectiveness of public investment depends on institutional quality, proxied by corruption.*
 
----
-
-## 1. Motivation
+### 1. Motivation
 
 In recent years, public investment has returned to the centre of the European policy debate.  
 The need to close infrastructure gaps, support the green transition, and strengthen long-run growth has led to renewed interest in the **macroeconomic effects of public investment**.
@@ -25,11 +23,10 @@ However, an important question remains largely unexplored:
 
 In particular, this article asks whether the impact of public investment differs between countries with **low and high levels of corruption**.
 
----
 
-## 2. The Original Paper: Idea and Identification Strategy
+### 2. The Original Paper: Idea and Identification Strategy
 
-### 2.1 Public Investment Shocks via Forecast Errors
+#### 2.1 Public Investment Shocks via Forecast Errors
 
 The core idea of Heimberger and Dabrowski (2025) is to identify public investment shocks using **forecast errors**:
 
@@ -46,9 +43,8 @@ This strategy addresses two classic problems in fiscal policy estimation:
 
 By exploiting forecast errors from European Commission archives, the authors align the econometric information set with that of households and firms.
 
----
 
-### 2.2 Econometric Framework
+#### 2.2 Econometric Framework
 
 The paper estimates impulse responses using **local projections** (Jordà, 2005), based on the following baseline equation:
 
@@ -71,9 +67,8 @@ where:
 
 The authors find **cumulative output multipliers above one**, with no evidence of crowding-out or rising debt.
 
----
 
-## 3. Replication: Why It Matters
+### 3. Replication: Why It Matters
 
 Before extending the analysis, I fully **replicate the original results** using the authors’ specification and data structure.
 
@@ -87,9 +82,8 @@ The replicated impulse-response functions closely match those reported in the or
 
 *(Baseline graphs reproduced here in the final version.)*
 
----
 
-## 4. Research Question: Does Corruption Matter?
+### 4. Research Question: Does Corruption Matter?
 
 While average effects are informative, fiscal multipliers may vary across countries.
 
@@ -105,11 +99,10 @@ This leads to the central question of this article:
 
 > **Is the macroeconomic impact of public investment lower in more corrupt countries?**
 
----
 
-## 5. Methodological Extension: Introducing Corruption Interactions
+### 5. Methodological Extension: Introducing Corruption Interactions
 
-### 5.1 Extended Specification
+#### 5.1 Extended Specification
 
 To address this question, I extend the baseline local projection framework by allowing the public investment shock to interact with lagged corruption.
 
@@ -134,9 +127,8 @@ Corruption is mean-centered so that:
 
 This specification allows the **investment multiplier to vary continuously** with institutional quality.
 
----
 
-### 5.2 Interpretation
+#### 5.2 Interpretation
 
 - \(\beta_k\): effect of a public investment shock at average corruption.
 - \(\theta_k\): marginal effect of corruption on the investment multiplier.
@@ -148,9 +140,8 @@ Conditional impulse responses can be computed for:
 
 Inference is conducted using **Driscoll–Kraay standard errors**, robust to serial and cross-sectional correlation.
 
----
 
-## 6. Preview of Results (Qualitative)
+### 6. Preview of Results (Qualitative)
 
 The extended results suggest that **public investment is not equally effective across institutional environments**.
 
@@ -163,9 +154,8 @@ This finding does not contradict the original paper; rather, it qualifies its av
 
 *(Quantitative results and figures are presented in the next section.)*
 
----
 
-## 7. Why This Matters for Policy
+### 7. Why This Matters for Policy
 
 The results have direct policy implications:
 
@@ -175,9 +165,8 @@ The results have direct policy implications:
 
 In the context of EU-wide investment initiatives, this suggests that **institutional capacity should be treated as a macroeconomic parameter**, not just a political constraint.
 
----
 
-## 8. Conclusion
+### 8. Conclusion
 
 This article builds on recent evidence showing that public investment boosts economic activity in the European Union.
 
@@ -192,9 +181,9 @@ Future research could explore:
 - alternative institutional indicators,
 - sector-specific public investment shocks.
 
----
 
-## References
+
+### References
 
 Heimberger, P., & Dabrowski, C. (2025). *Boosting the economy without raising the public debt ratio? The effects of public investment shocks in the European Union*. Applied Economics Letters.
 
