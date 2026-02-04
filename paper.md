@@ -150,7 +150,7 @@ y_{i,t+k} - y_{i,t-1}
 + \varepsilon_{i,t}^k
 ```
 
-The corruption indicator is lagged and mean-centered, so that \(\beta_k\) captures the effect of public investment at average corruption levels, while \(\theta_k\) measures how this effect varies with institutional quality.
+The corruption indicator is lagged and mean-centered, so that $$\(\beta_k\)$$ captures the effect of public investment at average corruption levels, while $$\(\theta_k\)$$ measures how this effect varies with institutional quality.
 
 
 #### 6.2 Interpretation
