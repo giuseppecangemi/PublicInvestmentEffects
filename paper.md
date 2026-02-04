@@ -68,7 +68,7 @@ This section briefly discusses the baseline results obtained from the replicatio
 
 #### 4.1 Real GDP: Cumulative Investment Multiplier
 
-![Real GDP: cumulative investment multiplier](gdp.png)
+![Real GDP: cumulative investment multiplier](graphs/BASELINE/gdp.png)
 
 The response of real GDP to a public investment shock exhibits a clear and economically meaningful pattern. On impact, the output multiplier is approximately 0.6, indicating that public investment generates a sizable increase in economic activity, though not a one-to-one effect in the very short run. Over time, the multiplier rises steadily, exceeding unity after one year and stabilising around 1.2 to 1.3 after two to three years.
 
@@ -77,7 +77,7 @@ This gradual build-up is consistent with the idea that public investment operate
 
 #### 4.2 Private Investment: Complementarity Rather Than Crowding-Out
 
-![Private investment ratio](private_investment.png)
+![Private investment ratio](graphs/BASELINE/private_investment.png)
 
 Private investment responds positively to public investment shocks. The response peaks after one year and remains positive over the entire horizon, although uncertainty increases at longer horizons.
 
@@ -86,7 +86,7 @@ These dynamics suggest that public investment does not crowd out private capital
 
 #### 4.3 Public Debt: Debt Dynamics Remain Benign
 
-![Public debt ratio](public_debt.png)
+![Public debt ratio](graphs/BASELINE/public_debt.png)
 
 The response of the public-debt-to-GDP ratio is mildly negative in the first two years following the shock and returns close to zero thereafter. While the confidence bands are wide, there is no indication of a systematic increase in public debt.
 
@@ -95,7 +95,7 @@ This pattern suggests that the growth effects of public investment are sufficien
 
 #### 4.4 Unemployment: Short-Run Labour Market Effects
 
-![Unemployment rate](unemployment.png)
+![Unemployment rate](graphs/BASELINE/unemployment.png)
 
 Unemployment declines following the public investment shock, reaching its maximum reduction after one to two years before gradually returning towards its pre-shock level. This response mirrors the dynamics of output and reflects higher labour demand as economic activity expands.
 
