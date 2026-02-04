@@ -113,6 +113,23 @@ While the average effects of public investment are clearly positive, they may co
 
 Higher corruption may reduce the efficiency of public investment, increase leakages and rent-seeking, and weaken the transmission from public spending to real economic activity. This consideration motivates the central question of the article: whether the macroeconomic impact of public investment is systematically lower in more corrupt countries.
 
+#### Evidence from the Literature on Corruption and Economic Activity
+
+A large body of economic research has established that corruption is not merely a legal or ethical issue but also a significant economic phenomenon. In theoretical terms, corruption distorts incentives, generates inefficiencies in public resource allocation, and can undermine the effectiveness of government policies when public officials divert public power for private gain. This broad perspective is supported by principal–agent models, which emphasize how asymmetric information and weak accountability foster rent-seeking and erode economic performance over time. :contentReference[oaicite:0]{index=0}
+
+Empirical studies have documented a robust negative relationship between corruption and key economic outcomes. For instance, cross-country evidence suggests that higher corruption is associated with lower long-run economic growth and reduced private investment, as firms face higher costs, greater uncertainty, and weaker rule of law. Quantitative research has also highlighted how increases in corruption indices correlate with lower GDP per capita growth rates and diminished foreign direct investment. :contentReference[oaicite:1]{index=1}
+
+This literature motivates the inclusion of institutional quality — and in particular corruption — as a potential source of heterogeneity in the transmission of public investment shocks.
+
+#### Data on Corruption: Worldwide Governance Indicators
+
+To measure institutional quality, this study draws on the **Worldwide Governance Indicators (WGI)** produced by the **World Bank Group**. The WGI are a widely used global dataset covering over 200 economies annually since 1996, summarising multiple sources of perceptions about governance into six composite indicators. One of these dimensions, **Control of Corruption**, captures the extent to which public power is exercised for private gain, including petty and grand forms of corruption as well as state capture by elites and private interests. :contentReference[oaicite:2]{index=2}
+
+The Control of Corruption indicator is expressed both as an estimate on a standard normal scale and as a percentile rank relative to all countries. Lower scores and lower percentile ranks reflect worse governance outcomes — that is, more pervasive corruption and weaker institutional controls. :contentReference[oaicite:3]{index=3}
+
+For the heterogeneity analysis in this article, we focus on a subset of 15 countries with the lowest Control of Corruption scores among those in the European Union and selected advanced economies. These countries exhibit comparatively weak governance outcomes, as reflected in the WGI data, and provide an ex-ante basis for assessing whether institutional quality conditions the effectiveness of public investment shocks.
+
+The choice of this subgroup aligns with existing work showing that institutional quality can shape macroeconomic dynamics: countries with weaker control of corruption tend to face higher risks of resource misallocation, lower levels of productive investment, and slower adjustment to shocks. By contrasting impulse responses across this subset and the broader panel, the analysis sheds light on the role of corruption as a modifier of fiscal multipliers.
 
 ### 6. Methodological Extension: Introducing Corruption Interactions
 
@@ -138,8 +155,57 @@ The corruption indicator is lagged and mean-centered, so that \(\beta_k\) captur
 
 This specification allows the investment multiplier to vary continuously with corruption. Conditional impulse responses can therefore be computed for countries with different levels of institutional quality, making it possible to assess whether corruption systematically attenuates the effectiveness of public investment.
 
+### 7. Extended Results: High- vs Low-Corruption Countries
 
-### 7. Conclusion
+This section presents the results of the extended specification, which allows the effects of public investment shocks to differ systematically between countries with high and low levels of corruption. Countries classified as high corruption include Italy, Spain, Portugal, Greece, Cyprus, Malta, Romania, Bulgaria, Croatia, Hungary, Slovakia, Poland, Czechia, Slovenia, and Latvia. The remaining countries in the sample form the low-corruption group.
+
+The comparison reveals pronounced differences in the transmission of public investment shocks across institutional environments.
+
+#### 7.1 Output Effects
+
+![GDP IRF (cumulative) – High corruption](graphs/CORRUPTION/gdp_high.png)
+![GDP IRF (cumulative) – Low corruption](graphs/CORRUPTION/gdp_low.png)
+
+In countries with high levels of corruption, the cumulative response of real GDP to a public investment shock is weak and statistically imprecise. The point estimates remain close to zero throughout the horizon, and the confidence bands widen substantially over time. This pattern suggests that public investment fails to generate sustained output gains in more corrupt environments.
+
+By contrast, in low-corruption countries, public investment shocks lead to large and persistent increases in output. The cumulative multiplier exceeds one already after the first year and continues to rise thereafter, reaching values well above those observed in the baseline. These results indicate that institutional quality plays a crucial role in translating public investment into real economic activity.
+
+#### 7.2 Private Investment Responses
+
+![Private investment IRF (cumulative) – High corruption](graphs/CORRUPTION/private_investment_high.png)
+![Private investment IRF (cumulative) – Low corruption](graphs/CORRUPTION/private_investment_low.png)
+
+Differences across corruption levels are even more pronounced for private investment. In high-corruption countries, private investment initially reacts weakly and eventually turns negative at medium horizons. This pattern is consistent with crowding-out mechanisms, whereby inefficiencies, rent-seeking, and uncertainty discourage private capital formation.
+
+In low-corruption countries, by contrast, private investment responds positively and persistently. Public investment appears to crowd in private investment, supporting the view that effective institutions enhance complementarities between public and private capital.
+
+#### 7.3 Public Investment Dynamics
+
+![Public investment IRF (cumulative) – High corruption](graphs/CORRUPTION/public_debt_high.png)
+![Public investment IRF (cumulative) – Low corruption](graphs/CORRUPTION/public_debt_low.png)
+
+Interestingly, public investment itself increases more strongly in high-corruption countries. This suggests that the weaker macroeconomic effects observed in these countries are not driven by a lack of fiscal impulse. Rather, they point to inefficiencies in the allocation and effectiveness of public investment spending.
+
+In low-corruption countries, public investment also rises, but its macroeconomic impact is considerably larger, reinforcing the interpretation that institutional quality governs the productivity of public capital.
+
+#### 7.4 Labour Market Effects
+
+![Unemployment IRF (cumulative) – High corruption](graphs/CORRUPTION/unemployment_high.png)
+![Unemployment IRF (cumulative) – Low corruption](graphs/CORRUPTION/unemployment_low.png)
+
+The labour market responses further highlight the importance of institutional quality. In high-corruption countries, unemployment declines only briefly and subsequently increases at medium horizons, suggesting that public investment fails to generate durable employment gains.
+
+In low-corruption countries, unemployment falls more sharply and remains below its pre-shock level for a longer period. This pattern mirrors the stronger output response and indicates that public investment translates more effectively into job creation when governance is stronger.
+
+#### 7.5 Interpretation
+
+Taken together, the extended results provide strong evidence that corruption significantly weakens the transmission of public investment shocks. While high-corruption countries experience increases in public investment spending, these do not translate into sustained output growth, private investment, or employment gains.
+
+By contrast, in low-corruption countries, public investment is highly effective, generating large output multipliers, crowding in private investment, and reducing unemployment. These findings suggest that institutional quality is a key conditioning factor for fiscal multipliers and help reconcile heterogeneous results in the empirical literature on public investment.
+
+
+
+### 8. Conclusion
 
 This article shows that public investment is highly effective on average, but its macroeconomic impact may depend crucially on institutional quality. Understanding this heterogeneity is essential for the design of public investment strategies that maximise growth and employment gains, particularly in the context of large-scale investment programmes in the European Union.
 
