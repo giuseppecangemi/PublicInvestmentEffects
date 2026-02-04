@@ -121,6 +121,10 @@ y_{i,t+k} - y_{i,t-1}
 + \varepsilon_{i,t}^k
 $$
 
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
+
 where Corr_{i,t−1} is a lagged corruption indicator.
 
 - corruption is centred so that \(\beta_k\) captures the effect at average corruption levels.
