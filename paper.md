@@ -110,11 +110,16 @@ To address this question, I extend the baseline local projection framework by al
 
 The estimated equation at horizon k is:
 
-y_{i,t+k} − y_{i,t−1}  
-= β_k · F_{i,t}  
-+ θ_k · (F_{i,t} × Corr_{i,t−1})  
-+ Σ_j γ_{k,j} · Z_{i,t−j}  
-+ δ_i^k + θ_t^k + ε_{i,t}^k
+$$
+y_{i,t+k} - y_{i,t-1}
+=
+\beta_k F_{i,t}
++ \theta_k \big( F_{i,t} \times \text{Corr}_{i,t-1} \big)
++ \sum_j \gamma_{k,j} Z_{i,t-j}
++ \delta_i^k
++ \theta_t^k
++ \varepsilon_{i,t}^k
+$$
 
 where Corr_{i,t−1} is a lagged corruption indicator.
 
