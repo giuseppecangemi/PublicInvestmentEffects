@@ -190,8 +190,20 @@ In low-corruption countries, public investment also rises, but its macroeconomic
 
 #### 7.4 Labour Market Effects
 
-![Unemployment IRF (cumulative) – High corruption](graphs/CORRUPTION/unemployment_high.png)
-![Unemployment IRF (cumulative) – Low corruption](graphs/CORRUPTION/unemployment_low.png)
+<div style="display: flex; gap: 20px;">
+
+  <div style="flex: 1;">
+    <img src="graphs/CORRUPTION/unemployment_high.png" width="100%">
+    <p align="center"><em>Unemployment – High corruption</em></p>
+  </div>
+
+  <div style="flex: 1;">
+    <img src="graphs/CORRUPTION/unemployment_low.png" width="100%">
+    <p align="center"><em>Unemployment – Low corruption</em></p>
+  </div>
+
+</div>
+
 
 The labour market responses further highlight the importance of institutional quality. In high-corruption countries, unemployment declines only briefly and subsequently increases at medium horizons, suggesting that public investment fails to generate durable employment gains.
 
@@ -215,3 +227,6 @@ This article shows that public investment is highly effective on average, but it
 Heimberger, P., & Dabrowski, C. (2025). *Boosting the economy without raising the public debt ratio? The effects of public investment shocks in the European Union*. Applied Economics Letters.
 
 Jordà, Ò. (2005). Estimation and inference of impulse responses by local projections. *American Economic Review*.
+
+World Bank - Corruption data: https://datacatalog.worldbank.org/search/dataset/0038026/worldwide-governance-indicators?
+
