@@ -106,22 +106,18 @@ This leads to the central question of this article:
 
 ### 5.1 Extended Specification
 
-To address this question, I extend the baseline local projection framework by allowing the investment shock to interact with lagged corruption:
+To address this question, I extend the baseline local projection framework by allowing the public investment shock to interact with lagged corruption.
 
-$$
-y_{i,t+k} - y_{i,t-1}
-=
-\beta_k F_{i,t}
-+ \theta_k \left( F_{i,t} \times \text{Corr}_{i,t-1} \right)
-+ \sum_j \gamma_{k,j} Z_{i,t-j}
-+ \delta_i^k
-+ \theta_t^k
-+ \varepsilon_{i,t}^k
-$$
+The estimated equation at horizon k is:
 
+y_{i,t+k} − y_{i,t−1}  
+= β_k · F_{i,t}  
++ θ_k · (F_{i,t} × Corr_{i,t−1})  
++ Σ_j γ_{k,j} · Z_{i,t−j}  
++ δ_i^k + θ_t^k + ε_{i,t}^k
 
-where:
-- \(\text{Corr}_{i,t-1}\) is a lagged corruption indicator,
+where Corr_{i,t−1} is a lagged corruption indicator.
+
 - corruption is centred so that \(\beta_k\) captures the effect at average corruption levels.
 
 This specification allows the **investment multiplier to vary continuously** with institutional quality.
