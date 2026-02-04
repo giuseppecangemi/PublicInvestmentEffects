@@ -16,7 +16,7 @@ date: "2026-XX-XX"
 In recent years, public investment has returned to the centre of the European policy debate.  
 The need to close infrastructure gaps, support the green transition, and strengthen long-run growth has led to renewed interest in the **macroeconomic effects of public investment**.
 
-A recent contribution by Heimberger and Dabrowski (2025) provides compelling evidence that **public investment shocks boost output, reduce unemployment, and do not endanger public debt sustainability** in the European Union :contentReference[oaicite:1]{index=1}.  
+A recent contribution by Heimberger and Dabrowski (2025) provides compelling evidence that **public investment shocks boost output, reduce unemployment, and do not endanger public debt sustainability** in the European Union.  
 Their results are based on a transparent identification strategy and modern local projection techniques.
 
 However, an important question remains largely unexplored:
@@ -33,9 +33,9 @@ In particular, this article asks whether the impact of public investment differs
 
 The core idea of Heimberger and Dabrowski (2025) is to identify public investment shocks using **forecast errors**:
 
-\[
+```math
 F_{i,t} = I^{\text{actual}}_{i,t} - I^{\text{forecast}}_{i,t}
-\]
+```
 
 where public investment is measured as general government gross fixed capital formation as a share of GDP.
 
@@ -52,14 +52,18 @@ By exploiting forecast errors from European Commission archives, the authors ali
 
 The paper estimates impulse responses using **local projections** (Jordà, 2005), based on the following baseline equation:
 
-\[
-y_{i,t+k} - y_{i,t-1} =
+```math
+y_{i,t+k} - y_{i,t-1}
+=
 \beta_k F_{i,t}
 + \sum_j \gamma_{k,j} Z_{i,t-j}
-+ \delta_i^k + \theta_t^k + \varepsilon_{i,t}^k
-\]
++ \delta_i^k
++ \theta_t^k
++ \varepsilon_{i,t}^k
+```
 
 where:
+
 - \(y\) denotes the outcome variable (GDP, unemployment, private investment, public debt),
 - \(F_{i,t}\) is the public investment forecast error,
 - \(Z\) includes standard macroeconomic controls,
@@ -92,6 +96,7 @@ While average effects are informative, fiscal multipliers may vary across countr
 A natural candidate driving heterogeneity is **institutional quality**, and in particular **corruption**.
 
 From an economic perspective, higher corruption may:
+
 - reduce investment efficiency,
 - increase leakages and rent-seeking,
 - weaken the transmission from public spending to real activity.
@@ -108,26 +113,24 @@ This leads to the central question of this article:
 
 To address this question, I extend the baseline local projection framework by allowing the public investment shock to interact with lagged corruption.
 
-The estimated equation at horizon k is:
+The estimated equation at horizon \(k\) is:
 
-$$
+```math
 y_{i,t+k} - y_{i,t-1}
 =
 \beta_k F_{i,t}
-+ \theta_k \big( F_{i,t} \times \text{Corr}_{i,t-1} \big)
++ \theta_k \left( F_{i,t} \times \text{Corr}_{i,t-1} \right)
 + \sum_j \gamma_{k,j} Z_{i,t-j}
 + \delta_i^k
 + \theta_t^k
 + \varepsilon_{i,t}^k
-$$
-
-```math
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 ```
 
-where Corr_{i,t−1} is a lagged corruption indicator.
+where \(\text{Corr}_{i,t-1}\) is a lagged corruption indicator.
 
-- corruption is centred so that \(\beta_k\) captures the effect at average corruption levels.
+Corruption is mean-centered so that:
+
+- \(\beta_k\) captures the effect at **average corruption levels**.
 
 This specification allows the **investment multiplier to vary continuously** with institutional quality.
 
@@ -137,11 +140,13 @@ This specification allows the **investment multiplier to vary continuously** wit
 
 - \(\beta_k\): effect of a public investment shock at average corruption.
 - \(\theta_k\): marginal effect of corruption on the investment multiplier.
-- Conditional impulse responses can be computed for:
-  - **low-corruption countries** (e.g. 25th percentile),
-  - **high-corruption countries** (e.g. 75th percentile).
 
-Inference is conducted using **Driscoll–Kraay standard errors**, robust to cross-sectional and serial correlation.
+Conditional impulse responses can be computed for:
+
+- **low-corruption countries** (e.g. 25th percentile),
+- **high-corruption countries** (e.g. 75th percentile).
+
+Inference is conducted using **Driscoll–Kraay standard errors**, robust to serial and cross-sectional correlation.
 
 ---
 
@@ -150,6 +155,7 @@ Inference is conducted using **Driscoll–Kraay standard errors**, robust to cro
 The extended results suggest that **public investment is not equally effective across institutional environments**.
 
 In particular:
+
 - countries with **lower corruption** experience **larger and more persistent output responses**,
 - countries with **higher corruption** exhibit **attenuated multipliers**, especially at medium horizons.
 
@@ -176,10 +182,12 @@ In the context of EU-wide investment initiatives, this suggests that **instituti
 This article builds on recent evidence showing that public investment boosts economic activity in the European Union.
 
 By replicating and extending the original analysis, it shows that:
+
 - average public investment multipliers mask important cross-country heterogeneity,
 - corruption weakens the transmission of public investment shocks.
 
 Future research could explore:
+
 - non-linearities,
 - alternative institutional indicators,
 - sector-specific public investment shocks.
@@ -188,8 +196,6 @@ Future research could explore:
 
 ## References
 
-Heimberger, P., & Dabrowski, C. (2025). *Boosting the economy without raising the public debt ratio? The effects of public investment shocks in the European Union*. Applied Economics Letters. :contentReference[oaicite:2]{index=2}
+Heimberger, P., & Dabrowski, C. (2025). *Boosting the economy without raising the public debt ratio? The effects of public investment shocks in the European Union*. Applied Economics Letters.
 
 Jordà, Ò. (2005). Estimation and inference of impulse responses by local projections. *American Economic Review*.
-
----
