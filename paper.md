@@ -68,7 +68,7 @@ This section briefly discusses the baseline results obtained from the replicatio
 
 #### 4.1 Real GDP: Cumulative Investment Multiplier
 
-![Real GDP: cumulative investment multiplier](graphs/BASELINE/gdp.png)
+<img src="graphs/BASELINE/gdp.png" width="55%">
 
 The response of real GDP to a public investment shock exhibits a clear and economically meaningful pattern. On impact, the output multiplier is approximately 0.6, indicating that public investment generates a sizable increase in economic activity, though not a one-to-one effect in the very short run. Over time, the multiplier rises steadily, exceeding unity after one year and stabilising around 1.2 to 1.3 after two to three years.
 
@@ -77,7 +77,7 @@ This gradual build-up is consistent with the idea that public investment operate
 
 #### 4.2 Private Investment: Complementarity Rather Than Crowding-Out
 
-![Private investment ratio](graphs/BASELINE/private_investment.png)
+<img src="graphs/BASELINE/private_investment.png" width="55%">
 
 Private investment responds positively to public investment shocks. The response peaks after one year and remains positive over the entire horizon, although uncertainty increases at longer horizons.
 
@@ -86,7 +86,8 @@ These dynamics suggest that public investment does not crowd out private capital
 
 #### 4.3 Public Debt: Debt Dynamics Remain Benign
 
-![Public debt ratio](graphs/BASELINE/public_debt.png)
+<img src="graphs/BASELINE/public_debt.png" width="55%">
+
 
 The response of the public-debt-to-GDP ratio is mildly negative in the first two years following the shock and returns close to zero thereafter. While the confidence bands are wide, there is no indication of a systematic increase in public debt.
 
@@ -95,7 +96,8 @@ This pattern suggests that the growth effects of public investment are sufficien
 
 #### 4.4 Unemployment: Short-Run Labour Market Effects
 
-![Unemployment rate](graphs/BASELINE/unemployment.png)
+<img src="graphs/BASELINE/unemployment.png" width="55%">
+
 
 Unemployment declines following the public investment shock, reaching its maximum reduction after one to two years before gradually returning towards its pre-shock level. This response mirrors the dynamics of output and reflects higher labour demand as economic activity expands.
 
@@ -163,17 +165,20 @@ The comparison reveals pronounced differences in the transmission of public inve
 
 #### 7.1 Output Effects
 
-![GDP IRF (cumulative) – High corruption](graphs/CORRUPTION/gdp_high.png)
-![GDP IRF (cumulative) – Low corruption](graphs/CORRUPTION/gdp_low.png)
+| GDP – High corruption | GDP – Low corruption |
+| - | - |
+| <img src="graphs/CORRUPTION/gdp_high.png" width="55%"> | <img src="graphs/CORRUPTION/gdp_low.png" width="55%"> |
+
 
 In countries with high levels of corruption, the cumulative response of real GDP to a public investment shock is weak and statistically imprecise. The point estimates remain close to zero throughout the horizon, and the confidence bands widen substantially over time. This pattern suggests that public investment fails to generate sustained output gains in more corrupt environments.
 
 By contrast, in low-corruption countries, public investment shocks lead to large and persistent increases in output. The cumulative multiplier exceeds one already after the first year and continues to rise thereafter, reaching values well above those observed in the baseline. These results indicate that institutional quality plays a crucial role in translating public investment into real economic activity.
 
 #### 7.2 Private Investment Responses
+| Private investment – High corruption | Private investment – Low corruption |
+| - | - |
+| <img src="graphs/CORRUPTION/private_investment_high.png" width="55%"> | <img src="graphs/CORRUPTION/private_investment_low.png" width="55%"> |
 
-![Private investment IRF (cumulative) – High corruption](graphs/CORRUPTION/private_investment_high.png)
-![Private investment IRF (cumulative) – Low corruption](graphs/CORRUPTION/private_investment_low.png)
 
 Differences across corruption levels are even more pronounced for private investment. In high-corruption countries, private investment initially reacts weakly and eventually turns negative at medium horizons. This pattern is consistent with crowding-out mechanisms, whereby inefficiencies, rent-seeking, and uncertainty discourage private capital formation.
 
@@ -181,8 +186,9 @@ In low-corruption countries, by contrast, private investment responds positively
 
 #### 7.3 Public Investment Dynamics
 
-![Public investment IRF (cumulative) – High corruption](graphs/CORRUPTION/public_debt_high.png)
-![Public investment IRF (cumulative) – Low corruption](graphs/CORRUPTION/public_debt_low.png)
+| Public debt – High corruption | Public debt – Low corruption |
+| - | - |
+| <img src="graphs/CORRUPTION/public_debt_high.png" width="55%"> | <img src="graphs/CORRUPTION/public_debt_low.png" width="55%"> |
 
 Interestingly, public investment itself increases more strongly in high-corruption countries. This suggests that the weaker macroeconomic effects observed in these countries are not driven by a lack of fiscal impulse. Rather, they point to inefficiencies in the allocation and effectiveness of public investment spending.
 
