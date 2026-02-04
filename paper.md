@@ -68,41 +68,39 @@ This section briefly discusses the baseline results obtained from the replicatio
 
 #### 4.1 Real GDP: Cumulative Investment Multiplier
 
-<img src="graphs/BASELINE/gdp.png" width="40%">
-
 The response of real GDP to a public investment shock exhibits a clear and economically meaningful pattern. On impact, the output multiplier is approximately 0.6, indicating that public investment generates a sizable increase in economic activity, though not a one-to-one effect in the very short run. Over time, the multiplier rises steadily, exceeding unity after one year and stabilising around 1.2 to 1.3 after two to three years.
 
 This gradual build-up is consistent with the idea that public investment operates through both demand-side channels in the short run and supply-side channels in the medium run, as improved infrastructure and public capital enhance productive capacity. The magnitude and persistence of the estimated multipliers are fully in line with the existing empirical literature on public investment.
 
+<img src="graphs/BASELINE/gdp.png" width="40%">
 
 #### 4.2 Private Investment: Complementarity Rather Than Crowding-Out
 
-<img src="graphs/BASELINE/private_investment.png" width="40%">
 
 Private investment responds positively to public investment shocks. The response peaks after one year and remains positive over the entire horizon, although uncertainty increases at longer horizons.
 
 These dynamics suggest that public investment does not crowd out private capital formation. On the contrary, they are consistent with a crowding-in mechanism, whereby public investment raises the expected profitability of private projects, improves infrastructure, or reduces adjustment costs faced by firms.
 
+<img src="graphs/BASELINE/private_investment.png" width="40%">
 
 #### 4.3 Public Debt: Debt Dynamics Remain Benign
 
-<img src="graphs/BASELINE/public_debt.png" width="40%">
 
 
 The response of the public-debt-to-GDP ratio is mildly negative in the first two years following the shock and returns close to zero thereafter. While the confidence bands are wide, there is no indication of a systematic increase in public debt.
 
 This pattern suggests that the growth effects of public investment are sufficiently strong to offset its fiscal cost, at least over the medium run. In this sense, public investment appears broadly consistent with debt sustainability.
 
+<img src="graphs/BASELINE/public_debt.png" width="40%">
 
 #### 4.4 Unemployment: Short-Run Labour Market Effects
-
-<img src="graphs/BASELINE/unemployment.png" width="40%">
 
 
 Unemployment declines following the public investment shock, reaching its maximum reduction after one to two years before gradually returning towards its pre-shock level. This response mirrors the dynamics of output and reflects higher labour demand as economic activity expands.
 
 Although uncertainty increases at longer horizons, the short-run decline in unemployment is economically meaningful and reinforces the stabilising role of public investment.
 
+<img src="graphs/BASELINE/unemployment.png" width="40%">
 
 #### 4.5 Summary of Baseline Findings
 
@@ -165,53 +163,51 @@ The comparison reveals pronounced differences in the transmission of public inve
 
 #### 7.1 Output Effects
 
-| GDP – High corruption | GDP – Low corruption |
-| - | - |
-| <img src="graphs/CORRUPTION/gdp_high.png" width="55%"> | <img src="graphs/CORRUPTION/gdp_low.png" width="55%"> |
-
 
 In countries with high levels of corruption, the cumulative response of real GDP to a public investment shock is weak and statistically imprecise. The point estimates remain close to zero throughout the horizon, and the confidence bands widen substantially over time. This pattern suggests that public investment fails to generate sustained output gains in more corrupt environments.
 
 By contrast, in low-corruption countries, public investment shocks lead to large and persistent increases in output. The cumulative multiplier exceeds one already after the first year and continues to rise thereafter, reaching values well above those observed in the baseline. These results indicate that institutional quality plays a crucial role in translating public investment into real economic activity.
 
-#### 7.2 Private Investment Responses
-| Private investment – High corruption | Private investment – Low corruption |
+| GDP – High corruption | GDP – Low corruption |
 | - | - |
-| <img src="graphs/CORRUPTION/private_investment_high.png" width="55%"> | <img src="graphs/CORRUPTION/private_investment_low.png" width="55%"> |
+| <img src="graphs/CORRUPTION/gdp_high.png" width="60%"> | <img src="graphs/CORRUPTION/gdp_low.png" width="55%"> |
 
+#### 7.2 Private Investment Responses
 
 Differences across corruption levels are even more pronounced for private investment. In high-corruption countries, private investment initially reacts weakly and eventually turns negative at medium horizons. This pattern is consistent with crowding-out mechanisms, whereby inefficiencies, rent-seeking, and uncertainty discourage private capital formation.
 
 In low-corruption countries, by contrast, private investment responds positively and persistently. Public investment appears to crowd in private investment, supporting the view that effective institutions enhance complementarities between public and private capital.
 
-#### 7.3 Public Investment Dynamics
-
-| Public debt – High corruption | Public debt – Low corruption |
+| Private investment – High corruption | Private investment – Low corruption |
 | - | - |
-| <img src="graphs/CORRUPTION/public_debt_high.png" width="55%"> | <img src="graphs/CORRUPTION/public_debt_low.png" width="55%"> |
+| <img src="graphs/CORRUPTION/private_investment_high.png" width="60%"> | <img src="graphs/CORRUPTION/private_investment_low.png" width="55%"> |
+
+#### 7.3 Public Investment Dynamics
 
 Interestingly, public investment itself increases more strongly in high-corruption countries. This suggests that the weaker macroeconomic effects observed in these countries are not driven by a lack of fiscal impulse. Rather, they point to inefficiencies in the allocation and effectiveness of public investment spending.
 
 In low-corruption countries, public investment also rises, but its macroeconomic impact is considerably larger, reinforcing the interpretation that institutional quality governs the productivity of public capital.
 
-#### 7.4 Labour Market Effects
-
-| Unemployment – High corruption | Unemployment – Low corruption |
+| Public debt – High corruption | Public debt – Low corruption |
 | - | - |
-| <img src="graphs/CORRUPTION/unemployment_high.png" width="55%"> | <img src="graphs/CORRUPTION/unemployment_low.png" width="55%"> |
+| <img src="graphs/CORRUPTION/public_debt_high.png" width="60%"> | <img src="graphs/CORRUPTION/public_debt_low.png" width="55%"> |
 
+#### 7.4 Labour Market Effects
 
 
 The labour market responses further highlight the importance of institutional quality. In high-corruption countries, unemployment declines only briefly and subsequently increases at medium horizons, suggesting that public investment fails to generate durable employment gains.
 
 In low-corruption countries, unemployment falls more sharply and remains below its pre-shock level for a longer period. This pattern mirrors the stronger output response and indicates that public investment translates more effectively into job creation when governance is stronger.
 
+| Unemployment – High corruption | Unemployment – Low corruption |
+| - | - |
+| <img src="graphs/CORRUPTION/unemployment_high.png" width="60%"> | <img src="graphs/CORRUPTION/unemployment_low.png" width="55%"> |
+
 #### 7.5 Interpretation
 
 Taken together, the extended results provide strong evidence that corruption significantly weakens the transmission of public investment shocks. While high-corruption countries experience increases in public investment spending, these do not translate into sustained output growth, private investment, or employment gains.
 
 By contrast, in low-corruption countries, public investment is highly effective, generating large output multipliers, crowding in private investment, and reducing unemployment. These findings suggest that institutional quality is a key conditioning factor for fiscal multipliers and help reconcile heterogeneous results in the empirical literature on public investment.
-
 
 
 ### 8. Conclusion
