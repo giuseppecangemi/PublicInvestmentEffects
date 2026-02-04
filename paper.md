@@ -193,12 +193,12 @@ In low-corruption countries, public investment also rises, but its macroeconomic
 <div style="display: flex; gap: 20px;">
 
   <div style="flex: 1;">
-    <img src="graphs/CORRUPTION/unemployment_high.png" width="100%">
+    <img src="graphs/CORRUPTION/unemployment_high.png" width="40%">
     <p align="center"><em>Unemployment – High corruption</em></p>
   </div>
 
   <div style="flex: 1;">
-    <img src="graphs/CORRUPTION/unemployment_low.png" width="100%">
+    <img src="graphs/CORRUPTION/unemployment_low.png" width="40%">
     <p align="center"><em>Unemployment – Low corruption</em></p>
   </div>
 
