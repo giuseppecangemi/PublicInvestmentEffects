@@ -191,7 +191,7 @@ In low-corruption countries, public investment also rises, but its macroeconomic
 #### 7.4 Labour Market Effects
 
 | Unemployment – High corruption | Unemployment – Low corruption |
-| --- | --- |
+| -- | -- |
 | <img src="graphs/CORRUPTION/unemployment_high.png" width="40%"> | <img src="graphs/CORRUPTION/unemployment_low.png" width="40%"> |
 
 
