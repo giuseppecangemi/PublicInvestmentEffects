@@ -36,9 +36,9 @@ Questo articolo, pertanto, si propone di analizzare se e in che misura l’impat
 
 L’idea chiave in Heimberger e Dabrowski (2025) consiste nell’identificare gli shock di investimento pubblico attraverso gli errori di previsione, definiti come la differenza tra l’investimento pubblico effettivamente realizzato e la corrispondente previsione formulata ex ante:
 
-$$
+```math
 F_{i,t} = I^{\text{actual}}_{i,t} - I^{\text{forecast}}_{i,t}.
-$$
+```
 
 L’investimento pubblico è misurato come formazione lorda di capitale fisso delle amministrazioni pubbliche in rapporto al PIL.
 
@@ -52,7 +52,7 @@ L’impiego dei *forecast errors* consente quindi di allineare l’insieme infor
 
 Gli effetti dinamici degli shock di investimento pubblico sono stimati utilizzando proiezioni locali à la Jordà (2005). Per ciascun orizzonte \(k\), la specificazione di base assume la forma:
 
-$$
+```math
 y_{i,t+k} - y_{i,t-1}
 =
 \beta_k F_{i,t}
@@ -60,7 +60,7 @@ y_{i,t+k} - y_{i,t-1}
 + \delta_i^k
 + \theta_t^k
 + \varepsilon_{i,t}^k.
-$$
+```
 
 La variabile dipendente misura la risposta cumulata della variabile macroeconomica di interesse all’orizzonte \(k\), costruita come differenza tra il valore futuro e il valore pre-shock. Questa formulazione consente di interpretare direttamente i coefficienti stimati come effetti cumulativi di uno shock di investimento pubblico, facilitando il confronto con la letteratura sui moltiplicatori fiscali. Il coefficiente \(\beta_k\) cattura l’effetto dello shock di investimento pubblico sull’outcome considerato a ciascun orizzonte temporale \(k\). La stima separata dell’equazione per ogni orizzonte permette di tracciare l’intero profilo dinamico della risposta senza imporre restrizioni parametriche sulla forma della funzione di risposta all’impulso. In questo senso, l’approccio delle proiezioni locali si distingue dai modelli VAR tradizionali, nei quali la dinamica delle risposte è vincolata dalla specificazione del sistema e dalla struttura delle dipendenze temporali.
 
@@ -88,7 +88,7 @@ Questa sezione discute brevemente i risultati di base ottenuti dalla replicazion
 
 La risposta del PIL reale a uno shock di investimento pubblico (Figura 1a) mostra un andamento chiaro e economicamente significativo. All'impatto, il moltiplicatore del prodotto è di circa 0,6, a indicare che l'investimento pubblico genera un aumento consistente dell'attività economica, seppur inferiore a uno nel brevissimo periodo. Nel tempo, il moltiplicatore cresce in modo monotono, supera l'unità dopo un anno e si stabilizza intorno a 1,2–1,3 dopo due o tre anni.
 
-Questo accumulo graduale è coerente con l'idea che l'investimento pubblico operi sia attraverso canali dal lato della domanda nel breve periodo, sia attraverso canali dal lato dell'offerta nel medio periodo, in quanto infrastrutture e capitale pubblico migliori accrescono la capacità produttiva. La magnitudine e la persistenza dei moltiplicatori stimati sono pienamente in linea con la letteratura esistente sui moltiplicatori dell'investimento pubblico.
+Questo accumulo graduale è coerente con l'idea che l'investimento pubblico operi sia attraverso canali dal lato della domanda nel breve periodo, sia attraverso canali dal lato dell’offerta nel medio periodo, in quanto infrastrutture e capitale pubblico migliori accrescono la capacità produttiva. La magnitudine e la persistenza dei moltiplicatori stimati sono pienamente in linea con la letteratura esistente sui moltiplicatori dell'investimento pubblico.
 
 ### 4.2 Investimento privato: crowding-in o crowding-out?
 
@@ -122,13 +122,10 @@ Questa evidenza media, pur informativa, potrebbe tuttavia mascherare un’eterog
 
 #### Figura 1 – Effetti macroeconomici dell'investimento pubblico
 
-<img src="graphs/BASELINE/gdp.png" width="40%" alt="PIL reale: moltiplicatore cumulato dell'investimento pubblico">
-
-<img src="graphs/BASELINE/private_investment.png" width="40%" alt="Investimento privato: risposta cumulata">
-
-<img src="graphs/BASELINE/public_debt.png" width="40%" alt="Rapporto debito/PIL: risposta cumulata">
-
-<img src="graphs/BASELINE/unemployment.png" width="40%" alt="Tasso di disoccupazione: risposta cumulata">
+| | |
+| - | - |
+| <img src="graphs/BASELINE/gdp.png" width="90%" alt="PIL reale: moltiplicatore cumulato dell'investimento pubblico"> | <img src="graphs/BASELINE/private_investment.png" width="90%" alt="Investimento privato: risposta cumulata"> |
+| <img src="graphs/BASELINE/public_debt.png" width="90%" alt="Rapporto debito/PIL: risposta cumulata"> | <img src="graphs/BASELINE/unemployment.png" width="90%" alt="Tasso di disoccupazione: risposta cumulata"> |
 
 ---
 
@@ -163,7 +160,7 @@ La scelta di questo sottogruppo è coerente con lavori esistenti che mostrano co
 
 Per affrontare questa domanda, estendo il framework di proiezioni locali di base, consentendo allo shock di investimento pubblico di interagire con la corruzione ritardata:
 
-$$
+```math
 y_{i,t+k} - y_{i,t-1}
 =
 \beta_k F_{i,t}
@@ -172,7 +169,7 @@ y_{i,t+k} - y_{i,t-1}
 + \delta_i^k
 + \theta_t^k
 + \varepsilon_{i,t}^k.
-$$
+```
 
 L’indicatore di corruzione è ritardato e centrato rispetto alla media del campione, così da ridurre problemi di simultaneità e facilitare l’interpretazione dei coefficienti. In questa specificazione, il parametro \(\beta_k\) cattura la risposta dinamica dell’economia a uno shock di investimento pubblico in corrispondenza di un livello medio di corruzione, mentre \(\theta_k\) misura come tale risposta vari sistematicamente al variare della qualità istituzionale.
 
@@ -220,19 +217,19 @@ Nei paesi a bassa corruzione, la disoccupazione diminuisce in modo più marcato 
 
 | PIL – alta corruzione | PIL – bassa corruzione |
 | - | - |
-| <img src="graphs/CORRUPTION/gdp_high.png" width="60%" alt="PIL - alta corruzione"> | <img src="graphs/CORRUPTION/gdp_low.png" width="55%" alt="PIL - bassa corruzione"> |
+| <img src="graphs/CORRUPTION/gdp_high.png" width="90%" alt="PIL - alta corruzione"> | <img src="graphs/CORRUPTION/gdp_low.png" width="90%" alt="PIL - bassa corruzione"> |
 
 | Investimento privato – alta corruzione | Investimento privato – bassa corruzione |
 | - | - |
-| <img src="graphs/CORRUPTION/private_investment_high.png" width="60%" alt="Investimento privato - alta corruzione"> | <img src="graphs/CORRUPTION/private_investment_low.png" width="55%" alt="Investimento privato - bassa corruzione"> |
+| <img src="graphs/CORRUPTION/private_investment_high.png" width="90%" alt="Investimento privato - alta corruzione"> | <img src="graphs/CORRUPTION/private_investment_low.png" width="90%" alt="Investimento privato - bassa corruzione"> |
 
 | Debito pubblico – alta corruzione | Debito pubblico – bassa corruzione |
 | - | - |
-| <img src="graphs/CORRUPTION/public_debt_high.png" width="60%" alt="Debito pubblico - alta corruzione"> | <img src="graphs/CORRUPTION/public_debt_low.png" width="55%" alt="Debito pubblico - bassa corruzione"> |
+| <img src="graphs/CORRUPTION/public_debt_high.png" width="90%" alt="Debito pubblico - alta corruzione"> | <img src="graphs/CORRUPTION/public_debt_low.png" width="90%" alt="Debito pubblico - bassa corruzione"> |
 
 | Disoccupazione – alta corruzione | Disoccupazione – bassa corruzione |
 | - | - |
-| <img src="graphs/CORRUPTION/unemployment_high.png" width="60%" alt="Disoccupazione - alta corruzione"> | <img src="graphs/CORRUPTION/unemployment_low.png" width="55%" alt="Disoccupazione - bassa corruzione"> |
+| <img src="graphs/CORRUPTION/unemployment_high.png" width="90%" alt="Disoccupazione - alta corruzione"> | <img src="graphs/CORRUPTION/unemployment_low.png" width="90%" alt="Disoccupazione - bassa corruzione"> |
 
 ### 7.5 Interpretazione
 
