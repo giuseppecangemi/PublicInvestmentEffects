@@ -1,0 +1,286 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\title{Public Investment Multipliers and Corruption:\\
+Does Institutional Quality Matter?}
+
+\author{Giuseppe Cangemi}
+
+\date{2026-XX-XX}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This article combines replication and methodological extension. First, I replicate recent evidence on public investment multipliers in the EU. Second, I ask whether the effectiveness of public investment depends on institutional quality, proxied by corruption.
+\end{abstract}
+
+
+\section{Motivation}
+
+In recent years, public investment has returned to the centre of the European policy debate. The need to close infrastructure gaps, support the green transition, and strengthen long-run growth has renewed interest in the macroeconomic effects of public investment, both among policymakers and in the academic literature.
+
+A recent contribution by Heimberger and Dabrowski (2025) provides compelling evidence that public investment shocks boost output, reduce unemployment, and do not endanger public debt sustainability in the European Union. Their results are based on a transparent identification strategy and a modern local projection framework, and they contribute to a growing consensus that public investment may play a central role in stabilisation and growth policies.
+
+At the same time, an important question remains largely unexplored. While average effects are informative, they may conceal substantial heterogeneity across countries. In particular, it is not obvious that public investment should be equally effective in all institutional environments.
+
+This article therefore asks whether the macroeconomic impact of public investment differs systematically between countries with low and high levels of corruption.
+
+
+\section{The Original Paper: Idea and Identification Strategy}
+
+\subsection{Public Investment Shocks via Forecast Errors}
+
+The key idea in Heimberger and Dabrowski (2025) is to identify public investment shocks using forecast errors, defined as the difference between realised public investment and the corresponding ex-ante forecast:
+\begin{equation}
+F_{i,t} = I^{\text{actual}}_{i,t} - I^{\text{forecast}}_{i,t}.
+\end{equation}
+
+Public investment is measured as general government gross fixed capital formation as a share of GDP. This identification strategy addresses two well-known challenges in the empirical analysis of fiscal policy. First, it mitigates the fiscal foresight problem, as economic agents may adjust their behaviour in anticipation of announced investment plans. Second, it alleviates concerns about endogeneity, since forecast errors are plausibly orthogonal to contemporaneous macroeconomic shocks.
+
+By exploiting archive data from European Commission forecasts, the authors align the econometric information set with that of households and firms, strengthening the causal interpretation of the estimated impulse responses.
+
+
+\subsection{Econometric Framework}
+
+The dynamic effects of public investment shocks are estimated using local projections following Jordà (2005). At each horizon $k$, the baseline specification takes the form:
+\begin{equation}
+y_{i,t+k} - y_{i,t-1}
+=
+\beta_k F_{i,t}
++ \sum_j \gamma_{k,j} Z_{i,t-j}
++ \delta_i^k
++ \theta_t^k
++ \varepsilon_{i,t}^k.
+\end{equation}
+
+The dependent variable captures the cumulative response of the outcome of interest, which includes real GDP, unemployment, private investment, and the public-debt-to-GDP ratio. The vector of controls accounts for standard macroeconomic dynamics, while country and time fixed effects absorb unobserved heterogeneity. Inference is conducted using Driscoll--Kraay standard errors to account for serial and cross-sectional dependence.
+
+The original paper finds cumulative output multipliers above one, no evidence of crowding-out of private investment, and no deterioration in public debt dynamics.
+
+
+\section{Replication: Why It Matters}
+
+Before extending the analysis, I replicate the original results using the same empirical framework. Replication serves a dual purpose. First, it provides a validation of the original findings. Second, it establishes a clean benchmark against which the extended specification can be evaluated.
+
+The replicated impulse-response functions closely match those reported in the original study, both in terms of magnitude and dynamic patterns, lending confidence to the subsequent analysis.
+
+
+\section{Baseline Results: Interpretation and Economic Context}
+
+This section briefly discusses the baseline results obtained from the replication, which form the empirical reference point for the analysis of institutional heterogeneity.
+
+
+\subsection{Real GDP: Cumulative Investment Multiplier}
+
+The response of real GDP to a public investment shock exhibits a clear and economically meaningful pattern. On impact, the output multiplier is approximately 0.6, indicating that public investment generates a sizable increase in economic activity, though not a one-to-one effect in the very short run. Over time, the multiplier rises steadily, exceeding unity after one year and stabilising around 1.2 to 1.3 after two to three years.
+
+This gradual build-up is consistent with the idea that public investment operates through both demand-side channels in the short run and supply-side channels in the medium run, as improved infrastructure and public capital enhance productive capacity. The magnitude and persistence of the estimated multipliers are fully in line with the existing empirical literature on public investment.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/BASELINE/gdp.png}
+  \caption{Real GDP: cumulative investment multiplier}
+\end{figure}
+
+
+\subsection{Private Investment: Complementarity Rather Than Crowding-Out}
+
+Private investment responds positively to public investment shocks. The response peaks after one year and remains positive over the entire horizon, although uncertainty increases at longer horizons.
+
+These dynamics suggest that public investment does not crowd out private capital formation. On the contrary, they are consistent with a crowding-in mechanism, whereby public investment raises the expected profitability of private projects, improves infrastructure, or reduces adjustment costs faced by firms.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/BASELINE/private_investment.png}
+  \caption{Private investment: cumulative response}
+\end{figure}
+
+
+\subsection{Public Debt: Debt Dynamics Remain Benign}
+
+The response of the public-debt-to-GDP ratio is mildly negative in the first two years following the shock and returns close to zero thereafter. While the confidence bands are wide, there is no indication of a systematic increase in public debt.
+
+This pattern suggests that the growth effects of public investment are sufficiently strong to offset its fiscal cost, at least over the medium run. In this sense, public investment appears broadly consistent with debt sustainability.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/BASELINE/public_debt.png}
+  \caption{Public debt-to-GDP ratio: cumulative response}
+\end{figure}
+
+
+\subsection{Unemployment: Short-Run Labour Market Effects}
+
+Unemployment declines following the public investment shock, reaching its maximum reduction after one to two years before gradually returning towards its pre-shock level. This response mirrors the dynamics of output and reflects higher labour demand as economic activity expands.
+
+Although uncertainty increases at longer horizons, the short-run decline in unemployment is economically meaningful and reinforces the stabilising role of public investment.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/BASELINE/unemployment.png}
+  \caption{Unemployment rate: cumulative response}
+\end{figure}
+
+
+\subsection{Summary of Baseline Findings}
+
+Taken together, the baseline results depict a coherent macroeconomic adjustment. Public investment raises output by more than one-for-one in the medium run, stimulates private investment, reduces unemployment, and does not lead to an increase in public debt. These findings confirm the effectiveness of public investment on average and provide a solid benchmark for the analysis of heterogeneity across institutional environments.
+
+
+\section{Research Question: Does Corruption Matter?}
+
+While the average effects of public investment are clearly positive, they may conceal substantial variation across countries. A natural candidate driving such heterogeneity is institutional quality, and in particular corruption.
+
+Higher corruption may reduce the efficiency of public investment, increase leakages and rent-seeking, and weaken the transmission from public spending to real economic activity. This consideration motivates the central question of the article: whether the macroeconomic impact of public investment is systematically lower in more corrupt countries.
+
+
+\subsection*{Evidence from the Literature on Corruption and Economic Activity}
+
+A large body of economic research has established that corruption is not merely a legal or ethical issue but also a significant economic phenomenon. In theoretical terms, corruption distorts incentives, generates inefficiencies in public resource allocation, and can undermine the effectiveness of government policies when public officials divert public power for private gain. This broad perspective is supported by principal--agent models, which emphasize how asymmetric information and weak accountability foster rent-seeking and erode economic performance over time.\footnote{The Markdown version contained a placeholder \texttt{:contentReference[oaicite:0]\{index=0\}} at this point, which is omitted here as a non-standard citation token.}
+
+Empirical studies have documented a robust negative relationship between corruption and key economic outcomes. For instance, cross-country evidence suggests that higher corruption is associated with lower long-run economic growth and reduced private investment, as firms face higher costs, greater uncertainty, and weaker rule of law. Quantitative research has also highlighted how increases in corruption indices correlate with lower GDP per capita growth rates and diminished foreign direct investment.\footnote{Similarly, the placeholder \texttt{:contentReference[oaicite:1]\{index=1\}} from the Markdown text is not a standard LaTeX citation and is therefore not reproduced literally.}
+
+This literature motivates the inclusion of institutional quality --- and in particular corruption --- as a potential source of heterogeneity in the transmission of public investment shocks.
+
+
+\subsection*{Data on Corruption: Worldwide Governance Indicators}
+
+To measure institutional quality, this study draws on the \emph{Worldwide Governance Indicators (WGI)} produced by the \emph{World Bank Group}. The WGI are a widely used global dataset covering over 200 economies annually since 1996, summarising multiple sources of perceptions about governance into six composite indicators. One of these dimensions, \emph{Control of Corruption}, captures the extent to which public power is exercised for private gain, including petty and grand forms of corruption as well as state capture by elites and private interests.\footnote{The Markdown text included the token \texttt{:contentReference[oaicite:2]\{index=2\}} at this point.}
+
+The Control of Corruption indicator is expressed both as an estimate on a standard normal scale and as a percentile rank relative to all countries. Lower scores and lower percentile ranks reflect worse governance outcomes --- that is, more pervasive corruption and weaker institutional controls.\footnote{Analogously, the token \texttt{:contentReference[oaicite:3]\{index=3\}} is omitted as a non-standard citation.}
+
+For the heterogeneity analysis in this article, we focus on a subset of 15 countries with the lowest Control of Corruption scores among those in the European Union and selected advanced economies. These countries exhibit comparatively weak governance outcomes, as reflected in the WGI data, and provide an ex-ante basis for assessing whether institutional quality conditions the effectiveness of public investment shocks.
+
+The choice of this subgroup aligns with existing work showing that institutional quality can shape macroeconomic dynamics: countries with weaker control of corruption tend to face higher risks of resource misallocation, lower levels of productive investment, and slower adjustment to shocks. By contrasting impulse responses across this subset and the broader panel, the analysis sheds light on the role of corruption as a modifier of fiscal multipliers.
+
+
+\section{Methodological Extension: Introducing Corruption Interactions}
+
+\subsection{Extended Specification}
+
+To address this question, I extend the baseline local projection framework by allowing the public investment shock to interact with lagged corruption:
+\begin{equation}
+y_{i,t+k} - y_{i,t-1}
+=
+\beta_k F_{i,t}
++ \theta_k \left( F_{i,t} \times \text{Corr}_{i,t-1} \right)
++ \sum_j \gamma_{k,j} Z_{i,t-j}
++ \delta_i^k
++ \theta_t^k
++ \varepsilon_{i,t}^k.
+\end{equation}
+
+The corruption indicator is lagged and mean-centered, so that $\beta_k$ captures the effect of public investment at average corruption levels, while $\theta_k$ measures how this effect varies with institutional quality.
+
+
+\subsection{Interpretation}
+
+This specification allows the investment multiplier to vary continuously with corruption. Conditional impulse responses can therefore be computed for countries with different levels of institutional quality, making it possible to assess whether corruption systematically attenuates the effectiveness of public investment.
+
+
+\section{Extended Results: High- vs Low-Corruption Countries}
+
+This section presents the results of the extended specification, which allows the effects of public investment shocks to differ systematically between countries with high and low levels of corruption. Countries classified as high corruption include Italy, Spain, Portugal, Greece, Cyprus, Malta, Romania, Bulgaria, Croatia, Hungary, Slovakia, Poland, Czechia, Slovenia, and Latvia. The remaining countries in the sample form the low-corruption group.
+
+The comparison reveals pronounced differences in the transmission of public investment shocks across institutional environments.
+
+
+\subsection{Output Effects}
+
+In countries with high levels of corruption, the cumulative response of real GDP to a public investment shock is weak and statistically imprecise. The point estimates remain close to zero throughout the horizon, and the confidence bands widen substantially over time. This pattern suggests that public investment fails to generate sustained output gains in more corrupt environments.
+
+By contrast, in low-corruption countries, public investment shocks lead to large and persistent increases in output. The cumulative multiplier exceeds one already after the first year and continues to rise thereafter, reaching values well above those observed in the baseline. These results indicate that institutional quality plays a crucial role in translating public investment into real economic activity.
+
+\begin{figure}[h!]
+  \centering
+  \begin{tabular}{cc}
+    \includegraphics[width=0.45\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/gdp_high.png} &
+    \includegraphics[width=0.45\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/gdp_low.png} \\
+    \emph{GDP -- High corruption} & \emph{GDP -- Low corruption}
+  \end{tabular}
+  \caption{GDP IRF (cumulative) -- High vs Low corruption}
+\end{figure}
+
+
+\subsection{Private Investment Responses}
+
+Differences across corruption levels are even more pronounced for private investment. In high-corruption countries, private investment initially reacts weakly and eventually turns negative at medium horizons. This pattern is consistent with crowding-out mechanisms, whereby inefficiencies, rent-seeking, and uncertainty discourage private capital formation.
+
+In low-corruption countries, by contrast, private investment responds positively and persistently. Public investment appears to crowd in private investment, supporting the view that effective institutions enhance complementarities between public and private capital.
+
+\begin{figure}[h!]
+  \centering
+  \begin{tabular}{cc}
+    \includegraphics[width=0.45\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/private_investment_high.png} &
+    \includegraphics[width=0.45\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/private_investment_low.png} \\
+    \emph{Private investment -- High corruption} & \emph{Private investment -- Low corruption}
+  \end{tabular}
+  \caption{Private investment IRF (cumulative) -- High vs Low corruption}
+\end{figure}
+
+
+\subsection{Public Investment Dynamics}
+
+Interestingly, public investment itself increases more strongly in high-corruption countries. This suggests that the weaker macroeconomic effects observed in these countries are not driven by a lack of fiscal impulse. Rather, they point to inefficiencies in the allocation and effectiveness of public investment spending.
+
+In low-corruption countries, public investment also rises, but its macroeconomic impact is considerably larger, reinforcing the interpretation that institutional quality governs the productivity of public capital.
+
+\begin{figure}[h!]
+  \centering
+  \begin{tabular}{cc}
+    \includegraphics[width=0.45\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/public_debt_high.png} &
+    \includegraphics[width=0.45\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/public_debt_low.png} \\
+    \emph{Public debt -- High corruption} & \emph{Public debt -- Low corruption}
+  \end{tabular}
+  \caption{Public debt IRF (cumulative) -- High vs Low corruption}
+\end{figure}
+
+
+\subsection{Labour Market Effects}
+
+The labour market responses further highlight the importance of institutional quality. In high-corruption countries, unemployment declines only briefly and subsequently increases at medium horizons, suggesting that public investment fails to generate durable employment gains.
+
+In low-corruption countries, unemployment falls more sharply and remains below its pre-shock level for a longer period. This pattern mirrors the stronger output response and indicates that public investment translates more effectively into job creation when governance is stronger.
+
+\begin{figure}[h!]
+  \centering
+  \begin{tabular}{cc}
+    \includegraphics[width=0.45\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/unemployment_high.png} &
+    \includegraphics[width=0.45\textwidth]{/Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/unemployment_low.png} \\
+    \emph{Unemployment -- High corruption} & \emph{Unemployment -- Low corruption}
+  \end{tabular}
+  \caption{Unemployment IRF (cumulative) -- High vs Low corruption}
+\end{figure}
+
+
+\subsection{Interpretation}
+
+Taken together, the extended results provide strong evidence that corruption significantly weakens the transmission of public investment shocks. While high-corruption countries experience increases in public investment spending, these do not translate into sustained output growth, private investment, or employment gains.
+
+By contrast, in low-corruption countries, public investment is highly effective, generating large output multipliers, crowding in private investment, and reducing unemployment. These findings suggest that institutional quality is a key conditioning factor for fiscal multipliers and help reconcile heterogeneous results in the empirical literature on public investment.
+
+
+\section{Conclusion}
+
+This article shows that public investment is highly effective on average, but its macroeconomic impact may depend crucially on institutional quality. Understanding this heterogeneity is essential for the design of public investment strategies that maximise growth and employment gains, particularly in the context of large-scale investment programmes in the European Union.
+
+
+\section*{References}
+
+Heimberger, P., \& Dabrowski, C. (2025). \emph{Boosting the economy without raising the public debt ratio? The effects of public investment shocks in the European Union}. Applied Economics Letters.
+
+Jordà, Ò. (2005). Estimation and inference of impulse responses by local projections. \emph{American Economic Review}.
+
+World Bank -- Corruption data: \url{https://datacatalog.worldbank.org/search/dataset/0038026/worldwide-governance-indicators?}
+
+\end{document}
