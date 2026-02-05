@@ -1,7 +1,7 @@
 # Moltiplicatori dell'investimento pubblico e corruzione: La qualità istituzionale conta?
 
 **Autore:** Giuseppe Cangemi  
-**Data:** Febbraio - 2026
+**Data:** Gennaio - 2026
 
 ---
 
