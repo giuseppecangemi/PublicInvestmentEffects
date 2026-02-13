@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.19)  5 FEB 2026 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.19)  13 FEB 2026 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,6 +290,29 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip52
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count272
+\@cmidlb=\count273
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count274
+\@lastruleclass=\count275
+\@thisrulewidth=\dimen171
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box47
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 
@@ -299,48 +322,49 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen159
-\captionmargin@=\dimen160
-\captionwidth=\dimen161
-\caption@tempdima=\dimen162
-\caption@indent=\dimen163
-\caption@parindent=\dimen164
-\caption@hangindent=\dimen165
+\captionmargin=\dimen172
+\captionmargin@=\dimen173
+\captionwidth=\dimen174
+\caption@tempdima=\dimen175
+\caption@indent=\dimen176
+\caption@parindent=\dimen177
+\caption@hangindent=\dimen178
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count272
-\c@continuedfloat=\count273
+\c@caption@flags=\count276
+\c@continuedfloat=\count277
 Package caption Info: hyperref package is loaded.
+Package caption Info: threeparttable package is loaded.
 )
-\c@subfigure=\count274
-\c@subtable=\count275
+\c@subfigure=\count278
+\c@subtable=\count279
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count276
-\l__pdf_internal_box=\box47
+\l__kernel_color_stack_int=\count280
+\l__pdf_internal_box=\box48
 )
 (./testo_ita.aux)
 \openout1 = `testo_ita.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Info: Redefining \it@ocap on input line 20.
-LaTeX Info: Redefining \it@ccap on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Info: Redefining \it@ocap on input line 22.
+LaTeX Info: Redefining \it@ccap on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -378,16 +402,16 @@ LaTeX Info: Redefining \it@ccap on input line 20.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count277
-\scratchdimen=\dimen166
-\scratchbox=\box48
-\nofMPsegments=\count278
-\nofMParguments=\count279
+\scratchcounter=\count281
+\scratchdimen=\dimen179
+\scratchbox=\box49
+\nofMPsegments=\count282
+\nofMParguments=\count283
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count280
-\MPscratchDim=\dimen167
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
+\MPscratchCnt=\count284
+\MPscratchDim=\dimen180
+\MPnumerator=\count285
+\makeMPintoPDFobject=\count286
 \everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -398,8 +422,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 20.
+\AtBeginShipoutBox=\box50
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -411,24 +435,24 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count283
+\c@section@level=\count287
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
  (./testo_ita.out) (./testo_ita.out)
 \@outlinefile=\write3
 \openout3 = `testo_ita.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -444,7 +468,7 @@ s/BASELINE/gdp.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /BASELINE/gdp.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/BASELINE/gdp.png  used on input line 143.
+IC_INVESTMENT/graphs/BASELINE/gdp.png  used on input line 145.
 (pdftex.def)             Requested size: 187.89914pt x 150.78127pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/BAS
 ELINE/private_investment.png, id=132, 417.7206pt x 328.8285pt>
@@ -453,10 +477,10 @@ s/BASELINE/private_investment.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /BASELINE/private_investment.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/BASELINE/private_investment.png  used on input line 150.
+IC_INVESTMENT/graphs/BASELINE/private_investment.png  used on input line 152.
 (pdftex.def)             Requested size: 187.89914pt x 147.91124pt.
 
-Underfull \hbox (badness 4872) in paragraph at lines 151--151
+Underfull \hbox (badness 4872) in paragraph at lines 153--153
 []\T1/cmr/m/n/10.95 (b) |In-ve-sti-men-to pri-va-to: ri-spo-sta
  []
 
@@ -467,7 +491,7 @@ s/BASELINE/public_debt.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /BASELINE/public_debt.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/BASELINE/public_debt.png  used on input line 160.
+IC_INVESTMENT/graphs/BASELINE/public_debt.png  used on input line 162.
 (pdftex.def)             Requested size: 187.89914pt x 151.31813pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/BAS
 ELINE/unemployment.png, id=134, 417.7206pt x 328.8285pt>
@@ -476,7 +500,7 @@ s/BASELINE/unemployment.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /BASELINE/unemployment.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/BASELINE/unemployment.png  used on input line 167.
+IC_INVESTMENT/graphs/BASELINE/unemployment.png  used on input line 169.
 (pdftex.def)             Requested size: 187.89914pt x 147.91124pt.
 [6 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/
 BASELINE/gdp.png> </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INV
@@ -491,7 +515,7 @@ s/CORRUPTION/gdp_high.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /CORRUPTION/gdp_high.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/CORRUPTION/gdp_high.png  used on input line 288.
+IC_INVESTMENT/graphs/CORRUPTION/gdp_high.png  used on input line 290.
 (pdftex.def)             Requested size: 164.41711pt x 132.40714pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/COR
 RUPTION/gdp_low.png, id=162, 400.3758pt x 328.8285pt>
@@ -500,7 +524,7 @@ s/CORRUPTION/gdp_low.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /CORRUPTION/gdp_low.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/CORRUPTION/gdp_low.png  used on input line 289.
+IC_INVESTMENT/graphs/CORRUPTION/gdp_low.png  used on input line 291.
 (pdftex.def)             Requested size: 164.41711pt x 135.0363pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/COR
 RUPTION/private_investment_high.png, id=163, 408.3255pt x 328.8285pt>
@@ -510,7 +534,7 @@ s/CORRUPTION/private_investment_high.png Graphic file (type png)
 /CORRUPTION/private_investment_high.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
 IC_INVESTMENT/graphs/CORRUPTION/private_investment_high.png  used on input line
- 293.
+ 295.
 (pdftex.def)             Requested size: 164.41711pt x 132.40714pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/COR
 RUPTION/private_investment_low.png, id=164, 417.7206pt x 328.8285pt>
@@ -520,7 +544,7 @@ s/CORRUPTION/private_investment_low.png Graphic file (type png)
 /CORRUPTION/private_investment_low.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
 IC_INVESTMENT/graphs/CORRUPTION/private_investment_low.png  used on input line 
-294.
+296.
 (pdftex.def)             Requested size: 164.41711pt x 129.42673pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/COR
 RUPTION/public_debt_high.png, id=165, 408.3255pt x 328.8285pt>
@@ -529,7 +553,7 @@ s/CORRUPTION/public_debt_high.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /CORRUPTION/public_debt_high.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/CORRUPTION/public_debt_high.png  used on input line 298.
+IC_INVESTMENT/graphs/CORRUPTION/public_debt_high.png  used on input line 300.
 (pdftex.def)             Requested size: 164.41711pt x 132.40714pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/COR
 RUPTION/public_debt_low.png, id=166, 408.3255pt x 328.8285pt>
@@ -538,7 +562,7 @@ s/CORRUPTION/public_debt_low.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /CORRUPTION/public_debt_low.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/CORRUPTION/public_debt_low.png  used on input line 299.
+IC_INVESTMENT/graphs/CORRUPTION/public_debt_low.png  used on input line 301.
 (pdftex.def)             Requested size: 164.41711pt x 132.40714pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/COR
 RUPTION/unemployment_high.png, id=167, 417.7206pt x 328.8285pt>
@@ -547,7 +571,7 @@ s/CORRUPTION/unemployment_high.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /CORRUPTION/unemployment_high.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/CORRUPTION/unemployment_high.png  used on input line 303.
+IC_INVESTMENT/graphs/CORRUPTION/unemployment_high.png  used on input line 305.
 (pdftex.def)             Requested size: 164.41711pt x 129.42673pt.
 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/COR
 RUPTION/unemployment_low.png, id=168, 417.7206pt x 328.8285pt>
@@ -556,11 +580,11 @@ s/CORRUPTION/unemployment_low.png Graphic file (type png)
 <use /Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs
 /CORRUPTION/unemployment_low.png>
 Package pdftex.def Info: /Users/giuseppecangemi/Desktop/Programming/Python/PUBL
-IC_INVESTMENT/graphs/CORRUPTION/unemployment_low.png  used on input line 304.
+IC_INVESTMENT/graphs/CORRUPTION/unemployment_low.png  used on input line 306.
 (pdftex.def)             Requested size: 164.41711pt x 129.42673pt.
 
 
-LaTeX Warning: Float too large for page by 21.44057pt on input line 310.
+LaTeX Warning: Float too large for page by 21.44057pt on input line 312.
 
 [10] [11 </Users/giuseppecangemi/Desktop/Programming/Python/PUBLIC_INVESTMENT/g
 raphs/CORRUPTION/gdp_high.png> </Users/giuseppecangemi/Desktop/Programming/Pyth
@@ -575,32 +599,54 @@ BLIC_INVESTMENT/graphs/CORRUPTION/unemployment_high.png> </Users/giuseppecangem
 i/Desktop/Programming/Python/PUBLIC_INVESTMENT/graphs/CORRUPTION/unemployment_l
 ow.png>] [12]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-85.
+87.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (25.12437pt too wide) in paragraph at lines 383--386
+Overfull \hbox (25.12437pt too wide) in paragraph at lines 385--388
 \T1/cmtt/m/n/12 datacatalog . worldbank . org / search / dataset / 0038026 / wo
 rldwide-[]governance-[]indicators$[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 387.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 387.
+(./section_diagnostics.tex [13]
+Underfull \hbox (badness 1275) in paragraph at lines 34--35
+\T1/cmr/m/n/10.95 di Driscoll--Kraay. Nes-sun coef-fi-
+ []
+
+
+LaTeX Warning: Reference `tab:alt_wgi' on page 14 undefined on input line 48.
+
+[14] [15])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
  (./testo_ita.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 387.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 387.
-Package rerunfilecheck Info: File `testo_ita.out' has not changed.
-(rerunfilecheck)             Checksum: FD627BB570D81FB58629FE678C812426;1735.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
+
+
+Package rerunfilecheck Warning: File `testo_ita.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `testo_ita.out':
+(rerunfilecheck)             Before: FD627BB570D81FB58629FE678C812426;1735
+(rerunfilecheck)             After:  7038B4C8F816ACCAB54773AA33876AC2;1992.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 9241 strings out of 480608
- 143627 string characters out of 5903629
- 422331 words of memory out of 5000000
- 24917 multiletter control sequences out of 15000+600000
- 548285 words of font info for 65 fonts, out of 8000000 for 9000
+ 9391 strings out of 480608
+ 145842 string characters out of 5903629
+ 428145 words of memory out of 5000000
+ 25041 multiletter control sequences out of 15000+600000
+ 551298 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,11n,46p,1545b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,46p,1545b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
@@ -610,19 +656,21 @@ local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on testo_ita.pdf (13 pages, 564146 bytes).
+xlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on testo_ita.pdf (16 pages, 608902 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
  237 words of extra memory for PDF output out of 10000 (max. 10000000)
 

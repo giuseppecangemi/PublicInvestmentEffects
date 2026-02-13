@@ -1,0 +1,104 @@
+% ============================================================
+% APPENDICE: Test di specificazione e robustezza
+% ============================================================
+
+\newpage
+\appendix
+\section{Test di specificazione e robustezza}
+\label{app:diagnostics}
+
+
+\subsection{Test placebo: shock futuro}
+
+La strategia di identificazione presuppone che l'errore di previsione della Commissione Europea rappresenti una sorpresa genuinamente non anticipata. Se così non fosse --- ad esempio, se famiglie e imprese potessero prevedere le discrepanze tra investimento realizzato e previsto --- le risposte stimate rifletterebbero anticipazione anziché causalità.
+
+Il test placebo verifica questa ipotesi sostituendo lo shock effettivo $F_{i,t}$ con quello futuro $F_{i,t+1}$: se l'identificazione è corretta, l'errore di previsione di domani non può influenzare la variazione di oggi.
+
+\begin{table}[h!]
+\centering
+\caption{Test placebo: errore di previsione futuro ($F_{i,t+1}$) come shock}
+\label{tab:placebo}
+\begin{threeparttable}
+\begin{tabular}{ccccc}
+\toprule
+$k$ & $\hat{\beta}_k^{\text{P}}$ & $p$ & $\hat{\theta}_k^{\text{P}}$ & $p$ \\
+\midrule
+0 & 0{,}0024 & 0{,}478 & 0{,}0019 & 0{,}787 \\
+1 & 0{,}0039 & 0{,}468 & 0{,}0000 & 0{,}997 \\
+2 & 0{,}0098 & 0{,}117 & $-0{,}0032$ & 0{,}796 \\
+3 & 0{,}0088 & 0{,}253 & 0{,}0003 & 0{,}975 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item \textit{Note:} Specificazione identica al modello con interazione; errori standard di Driscoll--Kraay. Nessun coefficiente significativo a qualsiasi livello convenzionale.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+Nessuno dei coefficienti placebo risulta significativo. I valori di $\hat{\beta}_k^{\text{P}}$ e $\hat{\theta}_k^{\text{P}}$ sono economicamente trascurabili e statisticamente indistinguibili da zero a tutti gli orizzonti. Questo è un risultato importante per la credibilità dell'analisi: dimostra che gli agenti economici non anticipano sistematicamente le sorprese di investimento pubblico e che la strategia di identificazione basata sui forecast errors non è contaminata da \emph{fiscal foresight}. La validità dello shock, e quindi l'interpretazione causale delle risposte all'impulso sia nel modello baseline sia nella specificazione con interazione, ne esce rafforzata.
+
+
+\subsection{Robustezza del termine di interazione}
+
+Seguendo la prassi di Heimberger e Dabrowski (2025), valuto la stabilità del coefficiente di interazione $\hat{\theta}_k$ rispetto alla scelta dell'indicatore istituzionale, dell'ordine dei lag e della composizione campionaria. Queste verifiche sono essenziali per escludere che i risultati siano un artefatto di scelte metodologiche specifiche e per rafforzare la conclusione che la qualità istituzionale condizioni effettivamente l'efficacia dell'investimento pubblico.
+
+\subsubsection*{Indicatori WGI alternativi}
+
+La Tabella~\ref{tab:alt_wgi} riporta $\hat{\theta}_k$ quando l'indicatore di Government Effectiveness è sostituito con altre dimensioni dei Worldwide Governance Indicators. L'obiettivo è verificare se l'eterogeneità istituzionale emerga indipendentemente dalla scelta della proxy. Questa verifica è particolarmente rilevante in quanto i sei indicatori WGI, pur essendo correlati tra loro, catturano dimensioni concettualmente distinte della governance: il \emph{Control of Corruption} (CC) misura la percezione dell'uso del potere pubblico per fini privati; la \emph{Government Effectiveness} (GE) riflette la qualità dei servizi pubblici e la competenza della burocrazia; il \emph{Rule of Law} (RL) cattura il grado di fiducia nel rispetto delle regole, inclusa la tutela dei diritti di proprietà e l'applicazione dei contratti; la \emph{Regulatory Quality} (RQ) valuta la capacità del governo di formulare e attuare politiche e regolamentazioni che promuovano lo sviluppo del settore privato. Se il risultato fosse interamente guidato da una sola di queste dimensioni, la conclusione sarebbe fragile e dipendente dalla scelta della proxy; al contrario, un pattern coerente tra indicatori diversi rafforza l'evidenza che sia la qualità istituzionale nel suo complesso --- e non un singolo aspetto specifico --- a condizionare l'efficacia dell'investimento pubblico.
+
+\begin{table}[h!]
+\centering
+\caption{$\hat{\theta}_k$ con indicatori WGI alternativi}
+\label{tab:alt_wgi}
+\begin{tabular}{lcccc}
+\toprule
+ & $k\!=\!0$ & $k\!=\!1$ & $k\!=\!2$ & $k\!=\!3$ \\
+\midrule
+Control of Corruption (CC) & $-0{,}0059^{*}$ & $-0{,}0109$ & $-0{,}0095$ & $-0{,}0046$ \\
+Gov.\ Effectiveness (GE) & $-0{,}0058^{*}$ & $-0{,}0104$ & $-0{,}0095$ & $-0{,}0031$ \\
+Rule of Law (RL) & $-0{,}0028$ & $-0{,}0040$ & $-0{,}0005$ & $0{,}0057$ \\
+Regulatory Quality (RQ) & $-0{,}0053$ & $-0{,}0067$ & $-0{,}0063$ & $0{,}0002$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Control of Corruption e Government Effectiveness --- i due indicatori più direttamente legati alla qualità della gestione della spesa pubblica --- producono risultati coerenti e significativi all'impatto. Rule of Law e Regulatory Quality confermano il segno negativo di $\hat{\theta}_k$ ai primi orizzonti ma con minore precisione, coerentemente con il fatto che queste dimensioni catturano aspetti della governance meno direttamente connessi all'efficienza dell'investimento pubblico. Nel complesso, l'eterogeneità istituzionale non è un artefatto della scelta di un singolo indicatore.
+
+\subsubsection*{Struttura dei lag}
+
+\begin{table}[h!]
+\centering
+\caption{$\hat{\theta}_k$ con diversi ordini di lag dei controlli}
+\label{tab:lags}
+\begin{tabular}{lcccc}
+\toprule
+ & $k\!=\!0$ & $k\!=\!1$ & $k\!=\!2$ & $k\!=\!3$ \\
+\midrule
+$p=1$ & $-0{,}0063$ & $-0{,}0089$ & $-0{,}0069$ & $-0{,}0043$ \\
+$p=2$ (baseline) & $-0{,}0058^{*}$ & $-0{,}0104$ & $-0{,}0095$ & $-0{,}0031$ \\
+$p=3$ & $-0{,}0047$ & $-0{,}0095$ & $-0{,}0061$ & $0{,}0022$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Il segno di $\hat{\theta}_k$ è consistentemente negativo per $k=0,1,2$ in tutte le specificazioni, indicando che la direzione dell'eterogeneità istituzionale non dipende dalla scelta dell'ordine dei ritardi. L'ampiezza del coefficiente è stabile, con variazioni contenute e compatibili con il diverso grado di condizionamento dei controlli.
+
+\subsubsection*{Sottocampioni}
+
+\begin{table}[h!]
+\centering
+\caption{$\hat{\theta}_k$ nei diversi sottocampioni}
+\label{tab:subsamples}
+\begin{tabular}{lccccc}
+\toprule
+ & $N$ & $k\!=\!0$ & $k\!=\!1$ & $k\!=\!2$ & $k\!=\!3$ \\
+\midrule
+Completo (2000--2023) & 500 & $-0{,}0058^{*}$ & $-0{,}0104$ & $-0{,}0095$ & $-0{,}0031$ \\
+Pre-COVID (2000--2019) & 394 & $-0{,}0066$ & $-0{,}0121$ & $-0{,}0114$ & $-0{,}0037$ \\
+Esclusa Irlanda & 479 & $-0{,}0016$ & $-0{,}0093$ & $-0{,}0080$ & $-0{,}0023$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Le stime pre-COVID sono leggermente più forti in valore assoluto, suggerendo che i risultati non sono trainati dal periodo anomalo 2020--2023 caratterizzato da lockdown e piani straordinari di investimento (NGEU). L'esclusione dell'Irlanda --- il cui PIL è notoriamente distorto dall'attività delle multinazionali --- riduce $\hat{\theta}_0$ all'impatto ma non altera il pattern complessivo agli orizzonti $k=1,2,3$. I risultati principali sono dunque robusti alla composizione del campione.
